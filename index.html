@@ -7,11 +7,11 @@ projects:
     description: "Master's thesis chart #1"
     link: "https://public.tableau.com/profile/aksaule#!/vizhome/RocketlauncheswithUDMH/Dashboard1"
   - title: "Rockets launched with UDMH, by places"
-    image: "https://raw.githubusercontent.com/aksaule/aksaule.github.io/master/screenshots/"
+    image: "https://raw.githubusercontent.com/aksaule/aksaule.github.io/master/screenshots/udmh2.png"
     description: "Master's thesis map #1"
     link: "https://public.tableau.com/profile/aksaule#!/vizhome/UDMH_World_static_map/Dashboard2"
   - title: "My third project"
-    image: "https://raw.githubusercontent.com/aksaule/aksaule.github.io/master/screenshots/"
+    image: "https://raw.githubusercontent.com/aksaule/aksaule.github.io/master/screenshots/udmh3.png"
     description: "Interactive chart of countries"
     link: "https://app.flourish.studio/visualisation/936135/edit"
 ---
@@ -20,7 +20,9 @@ projects:
   {% for project in page.projects %}
   <div class="col-6 col-md-4">
     <div class="card">
-      <img src="{{ project.image }}" class="card-img-top img-fluid d-block" alt="placeholder">
+      <a href="{{ project.link }}" class="btn btn-dark" target="_blank">
+        <img src="{{ project.image }}" class="card-img-top img-fluid d-block" alt="placeholder">
+      </a>
       <div class="card-body">
         <h5 class="card-title">{{ project.title }}</h5>
         <p class="card-text">{{ project.description }}</p>
